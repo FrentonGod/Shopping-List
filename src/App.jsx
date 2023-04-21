@@ -4,31 +4,31 @@ import ListItem from "./components/ListItem";
 function App() {
   const [listItems, setListItems] = useState([
     {
-      id: "1",
+      id: "0",
       name: "Arroz",
       quantity: 1,
-      unit:"Kg",
+      unit:"kg",
+      checked: false,
+    },
+    {
+      id: "1",
+      name: "Frijol",
+      quantity: 1,
+      unit:"kg",
       checked: false,
     },
     {
       id: "2",
-      name: "Frijol",
-      quantity: 1,
-      unit:"Kg",
+      name: "Leche",
+      quantity: 2,
+      unit:"lts",
       checked: false,
     },
     {
       id: "3",
-      name: "Leche",
-      quantity: 2,
-      unit:"Lts",
-      checked: false,
-    },
-    {
-      id: "4",
       name: "Papel Higenico",
       quantity: 1,
-      unit:"Pz",
+      unit:"pz",
       checked: false,
     },
   ])
