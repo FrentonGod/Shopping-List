@@ -1,32 +1,33 @@
 import { useState } from "react"
 import ListItem from "./components/ListItem";
+import NewItemButton from "./components/NewItemButton";
 
 function App() {
   const [listItems, setListItems] = useState([
     {
-      id: "0",
+      id: "1",
       name: "Arroz",
       quantity: 1,
       unit:"kg",
       checked: false,
     },
     {
-      id: "1",
+      id: "2",
       name: "Frijol",
       quantity: 1,
       unit:"kg",
       checked: false,
     },
     {
-      id: "2",
+      id: "3",
       name: "Leche",
       quantity: 2,
       unit:"lts",
       checked: false,
     },
     {
-      id: "3",
-      name: "Papel Higenico",
+      id: "4",
+      name: "Papel Higienico",
       quantity: 1,
       unit:"pz",
       checked: false,
@@ -49,10 +50,8 @@ function App() {
         <div className="col text-start">
           <h1>Shopping List</h1>
         </div>
-        <div className="col text-end">
-          <button type="button" className="btn btn-outline-primary">
-            <i className="bi bi-plus-circle"></i>
-          </button>
+        <div className="col text-end mt-2">
+          <NewItemButton />
         </div>
       </div>
       <hr />
@@ -69,6 +68,11 @@ function App() {
         ))
       }
       <hr />
+      <div className= "row">
+      <div className= "col text-end ">
+        <NewItemButton/>
+      </div>
+      </div>
     </div>
   )
 }
