@@ -5,28 +5,28 @@ import NewItemButton from "./components/NewItemButton";
 function App() {
   const [listItems, setListItems] = useState([
     {
-      id: "1",
+      id: "0",
       name: "Arroz",
       quantity: 1,
       unit:"kg",
       checked: false,
     },
     {
-      id: "2",
+      id: "1",
       name: "Frijol",
       quantity: 1,
       unit:"kg",
       checked: false,
     },
     {
-      id: "3",
+      id: "2",
       name: "Leche",
       quantity: 2,
       unit:"lts",
       checked: false,
     },
     {
-      id: "4",
+      id: "3",
       name: "Papel Higienico",
       quantity: 1,
       unit:"pz",
