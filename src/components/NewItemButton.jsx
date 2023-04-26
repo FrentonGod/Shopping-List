@@ -3,7 +3,7 @@ import Swal from "sweetalert2"
 const NewItemButton = ({listItems, setListItems}) => {
     const  newItemModal = async () => {
       const {value} = await Swal.fire({
-        title: "Silksong se acerca",
+        title: "New item Information",
         html: `
         <input 
         class="swal2-input"
@@ -41,14 +41,15 @@ const NewItemButton = ({listItems, setListItems}) => {
           return {name, quantity, unit};
         }
       })
+      if (!value.name || !value.quantity || !value.unit) return;
       setListItems([
         ...listItems,
         {
-          id: listItems.length + 1,
+          id: `${listItems.length + 1}`,
           ...value,
           checked: false,
         }
-      ])     
+      ]);     
     }
 
   return (
